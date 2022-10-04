@@ -1,0 +1,14 @@
+//A Java program that converts the Fahrenheit degree temperature to Kelvin scale
+import java.util.Scanner;
+public class FahrenheitToKelvin {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Enter the temperature in Fahrenheit: ");
+        double fahrenheit = input.nextDouble();
+        double kelvin = (fahrenheit - 32) * 5 / 9 + 273.15;
+        //format kelvin to 2 decimal places
+        System.out.printf("The temperature in Kelvin is: %.2f", kelvin);
+        input.close();
+    }
+ 
+}
